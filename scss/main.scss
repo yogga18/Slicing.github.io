@@ -1,0 +1,79 @@
+//font
+@import url('https://fonts.googleapis.com/css2 family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+//variable
+//color
+$pink1: #D2448D;
+$pink2: #FF73B5;
+$purple1: #A68EFE;
+$purple2: #4A2491;
+$snow : rgb(245, 240, 240);
+
+//style
+
+body {
+    // background-color: #FBFAFC;
+    // margin-bottom: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-navbar {
+    background: linear-gradient(90deg, rgba(210,68,141,1) 16%, rgba(166,142,254,1) 73%, rgba(74,36,145,1) 100%);
+
+
+    .navbar-brand {
+        font-family: 'Fredoka One', cursive;
+        font-size: 2.2em;
+        letter-spacing: 5px;
+        font-weight: 700;
+        color: $snow;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            color: darken($purple1, 55%);
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            font-weight: 500;
+            .nav-link{
+                color: $snow;
+                transition: .3s ease-in-out;
+                margin: 0 1.3em;
+                letter-spacing: 1.2px;
+
+                &:hover {
+                    color: darken($snow , 25%);
+                }
+            }
+        }
+    }
+
+}
+
+.jumbotron {
+    h1 {
+        color: $purple2;
+        font-weight: 700;
+        font-size: 4em;
+        white-space: nowrap;
+
+        @media screen and (max-width: 576px){
+            white-space: pre-wrap;
+            font-weight: 600;
+            font-size: 3em;
+        }
+    }
+    .btn {
+        background-color: $purple2;
+        transition: .3s ease;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: darken($purple2, 15%);
+        }
+    }
+
+}

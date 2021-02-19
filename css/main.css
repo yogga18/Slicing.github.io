@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2 family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #d2448d 16%, #a68efe 73%, #4a2491 100%);
+}
+.custom-navbar .navbar-brand {
+  font-family: "Fredoka One", cursive;
+  font-size: 2.2em;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: snow;
+  transition: 0.3s ease-in-out;
+}
+.custom-navbar .navbar-brand:hover {
+  color: #190172;
+}
+.custom-navbar .navbar-nav .nav-item {
+  font-weight: 500;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: snow;
+  transition: 0.3s ease-in-out;
+  margin: 0 1.3em;
+  letter-spacing: 1.2px;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff7b7b;
+}
+
+.jumbotron h1 {
+  color: #4A2491;
+  font-weight: 700;
+  font-size: 4em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 576px) {
+  .jumbotron h1 {
+    white-space: pre-wrap;
+    font-weight: 600;
+    font-size: 3em;
+  }
+}
+.jumbotron .btn {
+  background-color: #4A2491;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+.jumbotron .btn:hover {
+  background-color: #2b1554;
+}
+
+/*# sourceMappingURL=main.css.map */
